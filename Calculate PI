@@ -1,0 +1,30 @@
+package javaapplication3;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Netlab
+ */
+public class JavaApplication3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        String num=JOptionPane.showInputDialog("i=?");
+        double s=0;
+        int n=Integer.parseInt(num);
+      
+        int t=1,i;
+        for(i=1;i<=n;i++)
+        {
+            s=s+t*(1.0/(2*i-1));
+            t=-t;
+            
+        }
+        s=4*s;
+        JOptionPane.showMessageDialog(null, s);
+    }
+    
+}
